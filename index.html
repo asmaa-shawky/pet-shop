@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- responsive for mobile bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pet shop</title>
+    <!-- icon style sheets -->
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- main style_t css file -->
+    <link rel="stylesheet" href="css/style_t.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;600&display=swap"
+      rel="stylesheet"/>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-white  sticky-top " style="opacity:0.8"  >
+    <div class="container-fluid">
+<input type="image" src="images/logo.png" class="me-3 rounded-circle" alt="pic" height="40px" width="40px">
+      <a class="navbar-brand text-dark" href="#" style="border-right:1px solid #ccc; padding-right: 10px; font-weight: bold;">Pet Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Animals
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" target="_blank" href="">Dogs</a></li>
+              <li><a class="dropdown-item" target="_blank" href=""> Cats</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" target="_blank" href="">Rabbit</a></li>
+              <li><a class="dropdown-item" target="_blank" href="">Birds</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-dark">About</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success me-2" type="submit">Search</button>
+        </form>
+        <form class="d-flex">
+          <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</button>
+          
+        </form>
+        
+      </div>
+    </div>
+  </nav>
+      <!-- /navbar -->
+      <div class="container-fluid p-0">
+      <!-- carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/hero.jpg" class="d-block w-100"  height="580px" alt="pic1">
+            <div class="carousel-caption">
+              <h1 style="font-family: Cursive,Lucida Handwriting "> MAKE YOUR PETS HAPPY🐶💗 </h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/testimonial.jpg" class="d-block w-100"  height="580px" alt="pic3">
+            <div class="carousel-caption">
+              <h1 style="font-family: Cursive,Lucida Handwriting ">Everyone should have a puppy in their lives🐶💗</h1>
+            </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+            <!-- /carousel -->
+            <!-- cards -->
+            <div class="card p-4 bg-light text-success " style="border-top-left-radius: 0; border-top-right-radius:0 ;">
+              <div class="card-body">
+                <h2 class="card-title" style="color:green ; ">Unconditional Love... 💗</h2>
+                <p class="card-text text-dark">Animals do not ask for much in life, and most just need a warm, safe and sheltered place to live,
+                   as well as adequate food, water and exercise. 
+                  In return they will give you unconditional love, loyalty and companionship &#128054  &#128525 &#128151</p>
+              </div>
+            </div>
+          <!-- /cards -->
+<hr>
+<!-- collapse Accordion-->
+<h1 class="text-center text-success bg-white p-3 m-0 " style="font-family: Cursive,Lucida Handwriting " >Better Life For Your Pet🐶 </h1>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne" style="font-family: Cursive,Lucida Handwriting ">
+      <button class="accordion-button collapsed btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Take Care Of Your PET?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body" >
+        Take time to exercise them ,provide mental exercise,Provide good dental care at home 🏠</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo" style="font-family: Cursive,Lucida Handwriting ">
+      <button class="accordion-button collapsed btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Things every pet needs to feel good?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Freedom from hunger and thirst,pain, injury or disease fear and distress 😉 </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree" style="font-family: Cursive,Lucida Handwriting ">
+      <button class="accordion-button collapsed btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Basic Needs Of Animals?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Food, air, water, shelter, space – Animals need these! Food, air, water, shelter, space – We need these to live!  🌿    </div>
+    </div>
+  </div>
+</div>
+ <!-- Blog Start -->
+ 
+ <h1 class="text-center text-success bg-white p-3 m-0 " style="font-family: Cursive,Lucida Handwriting " > Latest From OUR BLOG ... 💗</h1>
+ <div class="container-fluid py-5">
+  <div class="container">
+      <div class="row g-5">
+          <div class="col-lg-6">
+              <div class="blog-item">
+                  <div class="row g-0 bg-light overflow-hidden">
+                      <div class="col-12 col-sm-5 h-100">
+                          <img class="img-fluid h-100" src="images/blog-1.jpg" style="object-fit: cover;">
+                      </div>
+                      <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
+                          <div class="p-4">
+                              <h5 class="text-uppercase mb-3">Your Pets Got Peeps</h5>
+                              <p>Make sure your pet gets the care and attention they deserve when you’re away at work or on holiday.</p>
+                              <a class="text-primary text-uppercase" href="">Read More</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="blog-item">
+                  <div class="row g-0 bg-light overflow-hidden">
+                      <div class="col-12 col-sm-5 h-100">
+                          <img class="img-fluid h-100" src="images/blog-2.jpg" style="object-fit: cover;">
+                      </div>
+                      <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
+                          <div class="p-4">
+                              <h5 class="text-uppercase mb-3">Your Pets Got Peeps</h5>
+                              <p>Make sure your pet gets the care and attention they deserve when you’re away at work or on holiday.r</p>
+                              <a class="text-primary text-uppercase" href="">Read More</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Blog End -->
+
+
+
+<!-- /collapse -->
+<div class="fixedimg fixedimg1"></div>
+
+<h2 class="text-center text-success m-4" style="font-family: Cursive,Lucida Handwriting ">PRODUCTS FOR YOUR Fav Pet...🥫</h2>
+<div class="container-fluid" >
+  <div class="row justify-content-around pb-5 " style="background-color: none; border-radius: 7px;">
+    
+    <div class="card bg-light text-ldark col-lg-3 col-md-4 col-sm-6 m-1 mt-5"  style="width: 18rem; ">
+      <a href="" target="_blank">
+      <img src="images/product-1.png" class="card-img-top" alt=""></a>
+      <div class="card-body">
+        <h5 class="card-title">Pet Food</h5>
+       <b> <p class="card-text">$50</p></b>
+      </div>
+    </div>
+   
+    <div class="card bg-light text-dark col-lg-3 col-md-4 col-sm-6 m-1 mt-5"  style="width: 18rem; ">
+      <a href="" target="_blank">
+      <img src="images/product-2.png" class="card-img-top" alt="product"></a>
+      <div class="card-body" >
+        <h5 class="card-title"> Pet Food</h5>
+        <b> <p class="card-text">$50</p></b>
+      </div>
+    </div>
+    
+     <div class="card bg-light text-dark col-lg-3 col-md-4 col-sm-6 m-1 mt-5"  style="width: 18rem; "  >
+      <a href="" target="_blank">
+      <img src="images/product-3.png" class="card-img-top" alt="product" height="265PX" width="100%;" ></a>
+      <div class="card-body" >
+        <h5 class="card-title">Pet Food</h5>
+        <b> <p class="card-text">$50</p></b>
+      </div>
+    </div>
+    
+    <div class="card bg-light text-dark col-lg-3 col-md-4 col-sm-6 m-1 mt-5"  style="width: 18rem; ">
+      <a href="" target="_blank">
+      <img src="images/product-4.png" class="card-img-top" alt="product" height="265PX" ></a>
+      <div class="card-body" >
+        <h5 class="card-title">Pet Food</h5>
+        <b> <p class="card-text">$50</p></b>
+       
+      </div>
+    </div>
+    
+</div>
+</div>
+
+<div class="fixedimg fixedimg2"></div>
+<hr class="my-4">
+
+<h2 class="text-center text-success m-3"  style="font-family: Cursive,Lucida Handwriting ">PETS CARE TEAM</h2>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="card m-3 bg-light text-dark" style="width: 18rem;" >
+      <img src="images/team-2.jpg" class="card-img-top" height="300px" alt="memo">
+      <div class="card-body">
+        <p class="card-title">Care Team</p>
+      </div>
+    </div>
+    <div class="card m-3 bg-light text-dark" style="width: 18rem;">
+      <img src="images/team-3.jpg" height="300px class="card-img-top alt="shimo">
+      <div class="card-body">
+        <p class="card-title">Care Team</p>
+      </div>
+    </div>
+    <div class="card m-3 bg-light text-dark" style="width: 18rem;">
+      <img src="images/team-5.jpg" height="300px class="card-img-top alt="meme">
+      <div class="card-body">
+        <p class="card-title">Care Team</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4">
+<!-- join us -->
+<h2 class="text-center text-success" style="font-family: Cursive,Lucida Handwriting "> Follow Us On Social Media</h2>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="card m-3 bg-light" style="width: 18rem;">
+      <div class="card-body text-dark d-flex flex-column text-center">
+        <h6 class="card-title mb-4">Subscribe Now
+        </h6>
+        <input class="myicon mb-2" style="align-self: center;" src="images/youtube.jpg" type="image" alt="youtube">
+       
+      </div>
+    </div>
+    <div class="card m-3 bg-light" style="width: 18rem;">
+      <div class="card-body text-dark d-flex flex-column text-center">
+        <h6 class="card-title mb-4">Follow 
+        </h6>
+        <input class="myicon mb-2" style="align-self: center;" src="images/insta.jpg" type="image" alt="insta">
+      </div>
+    </div>
+    <div class="card m-3 bg-light" style="width: 18rem;">
+      <div class="card-body text-dark d-flex flex-column text-center">
+        <h6 class="card-title mb-4">Like the page
+        </h6>
+        <input class="myicon mb-2" style="align-self: center;" src="images/face.png" type="image" alt="facebook">
+        
+      </div>
+    </div>
+    <div class="card m-3 bg-light" style="width: 18rem;">
+      <div class="card-body text-dark d-flex flex-column text-center">
+        <h6 class="card-title mb-4">watch vedio
+        </h6>
+        <input class="myicon mb-2" style="align-self: center;" src="images/video.png" type="image" alt="video">
+        
+      </div>
+    </div> 
+  </div>
+</div>
+<!-- /join us -->
+<!-- footer -->
+<footer class="bg-light text-dark mt-5 p-2 pb-5 ">
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <hr class="border-top my-3">
+      <h5 style="  color :green;font-family: Cursive,Lucida Handwriting  "><img src="images/icon2.jpg" alt="intouch" class="myicon" > GET IN TOUCH</h5>
+      <hr class="border-top my-3">
+      <address>
+        <p>📞Tel : +012 345 67890</p>
+        <p> 🏠Address :Cairo, EGYPT</p>
+        <p>📩Fax : info@example.com</p>
+      </address>
+    </div>
+    <div class="col-md-4">
+      <hr class="border-top my-3">
+      <h5 style=" color :green;font-family: Cursive,Lucida Handwriting "><img src="images/icon.png" alt="good pic" class="myicon"> QUICK LINKS</h5>
+      <hr class="border-top my-3">
+        <p><a href="" target="_blank">Home</a></p>
+        <p><a href="" target="_blank">About Us</a></p>
+        <p><a href="" target="_blank">Our Services</a></p>
+    </div>
+    <div class="col-md-4">
+      <hr class="border-top my-3">
+      <h5 style=" color :green; font-family: Cursive,Lucida Handwriting "><img src="images/icon3.png" alt="FOLLOW US" class="myicon"> FOLLOW US</h5>
+      <hr class="border-top my-3">
+      <p> <img src="images/face.png" alt="intouch" class="myicon" ><a href="#"> facebook</a></p>
+     <p><img src="images/whats.jpg" alt="intouch" class="myicon" > <a href="#"> Whatsapp</a></p>
+    <p> <img src="images/insta.jpg" alt="intouch" class="myicon" ><a href="#"> Instragm</a></p>
+    </div>
+  </div>
+</div>
+<hr>
+<span class="text-center d-block text-success" style="font-family: Cursive,Lucida Handwriting">Copyright &copy; 2020 Asmaa Shawky , PET SHOP. All rights</span>
+<hr>
+<!-- /footer -->
+<!-- modal -->
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-secondary" id="staticBackdropLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- form -->
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label text-secondary">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label text-secondary">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label text-secondary" for="flexSwitchCheckChecked">Remmember me</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <!-- /form -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /modal -->
+</div> <!-- container-fluid div -->
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
